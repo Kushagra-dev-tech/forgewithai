@@ -1,3 +1,11 @@
+/* Add margin to push content below the navbar */
+main {
+    margin-top: 80px; /* Adjust this value as needed */
+    padding: 20px;
+}
+body {
+    padding-top: 80px; /* Adjust based on navbar height */
+}
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
