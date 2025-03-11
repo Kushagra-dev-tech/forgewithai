@@ -1,22 +1,23 @@
 /* Reset default styles */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Body Styling */
 body {
-    background-color: #0a192f;
+    background: linear-gradient(135deg, #1c1c1c, #121212);
     color: #ffffff;
     line-height: 1.6;
 }
 
 /* Navbar Styling */
 nav {
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
-    padding: 15px 40px;
+    background: linear-gradient(90deg, #ff8c00, #ff4500);
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,60 +30,93 @@ nav {
 }
 
 nav h1 {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    margin-left: 20px;
-    transition: color 0.3s ease-in-out;
+    margin-left: 25px;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 8px;
 }
 
 nav a:hover {
-    color: #ffcc00;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff200;
 }
 
-/* Ensure content is not hidden under the navbar */
+/* Ensuring proper spacing between navbar & content */
 main {
-    margin-top: 90px;
-    padding: 40px;
+    margin-top: 120px;
+    padding: 50px;
     text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    padding: 80px 20px;
+    margin: 40px auto;
+    border-radius: 15px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0px 10px 25px rgba(255, 105, 135, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero:hover {
+    transform: scale(1.05);
+}
+
+.hero h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+    opacity: 0.8;
 }
 
 /* Section Styling */
 .section {
-    padding: 50px;
-    margin: 30px auto;
-    width: 80%;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
+    padding: 60px;
+    margin: 40px auto;
+    width: 85%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
     box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .section:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 /* Buttons */
 .button {
     background-color: #ffcc00;
     color: black;
-    padding: 12px 20px;
-    border-radius: 5px;
+    padding: 14px 24px;
+    border-radius: 6px;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
     transition: background 0.3s ease-in-out;
+    margin-top: 15px;
 }
 
 .button:hover {
     background-color: #ff9900;
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.6);
 }
 
 /* Footer */
@@ -91,4 +125,6 @@ footer {
     padding: 20px;
     background: #222;
     margin-top: 50px;
+    font-size: 16px;
+    opacity: 0.8;
 }
